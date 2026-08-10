@@ -1,0 +1,555 @@
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f8f3e7;
+
+  color: #182235;
+
+  font-family: "Georgia", serif;
+}
+
+/* =====================================================
+   HEADER MUSEE
+===================================================== */
+
+.header-musee {
+  height: 75vh;
+
+  min-height: 650px;
+
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  overflow: hidden;
+
+  background-image:
+    linear-gradient(rgba(5, 15, 35, 0.75), rgba(5, 15, 35, 0.85)),
+    url("../images/basilique-afrique.jpg");
+
+  background-size: cover;
+
+  background-position: center;
+}
+
+.header-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background: radial-gradient(
+    circle,
+    rgba(212, 170, 70, 0.25),
+    transparent 55%
+  );
+}
+
+.header-contenu {
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 900px;
+
+  padding: 30px;
+
+  color: white;
+}
+
+.header-label {
+  color: #d4af37;
+
+  letter-spacing: 4px;
+
+  font-size: 0.9rem;
+}
+
+.header-contenu h1 {
+  font-size: clamp(3rem, 6vw, 5rem);
+
+  margin: 30px 0;
+
+  font-family: "Cinzel", serif;
+}
+
+.header-contenu h1 span {
+  display: block;
+
+  color: #d4af37;
+}
+
+.header-contenu p {
+  font-size: 1.3rem;
+
+  line-height: 1.8;
+}
+
+.header-decoration {
+  margin-top: 35px;
+
+  color: #d4af37;
+
+  font-size: 2rem;
+}
+
+/* =====================================================
+   INTRODUCTION
+===================================================== */
+
+.introduction-musee {
+  padding: 90px 10%;
+
+  text-align: center;
+}
+
+.intro-contenu {
+  max-width: 900px;
+
+  margin: auto;
+}
+
+.intro-contenu span {
+  color: #b08a24;
+
+  letter-spacing: 3px;
+}
+
+.intro-contenu h2 {
+  margin: 25px 0;
+
+  font-family: "Cinzel", serif;
+
+  font-size: 2.8rem;
+}
+
+.intro-contenu p {
+  font-size: 1.2rem;
+
+  line-height: 2;
+}
+
+/* =====================================================
+   TITRE ROSACE
+===================================================== */
+
+.musee-histoire {
+  padding: 40px 5% 120px;
+}
+
+.titre-rosace {
+  text-align: center;
+
+  margin-bottom: 60px;
+}
+
+.titre-rosace span {
+  color: #c9a227;
+
+  font-size: 3rem;
+}
+
+.titre-rosace h2 {
+  font-family: "Cinzel", serif;
+
+  font-size: 3rem;
+}
+
+.titre-rosace p {
+  margin-top: 15px;
+
+  font-size: 1.2rem;
+}
+/* =====================================================
+   ROSACE VITRAIL
+===================================================== */
+
+
+.rosace {
+
+    width:900px;
+    height:900px;
+
+    position:relative;
+
+    border-radius:50%;
+
+    background:
+
+    radial-gradient(
+        circle,
+        #d4af37 0%,
+        #071d3a 18%,
+        #041021 60%,
+        #020812 100%
+    );
+
+
+    box-shadow:
+
+    0 0 100px rgba(212,175,55,.45);
+
+}
+
+/* ==========================================
+   VRAIE ROSACE - PETALES
+========================================== */
+
+
+.rosace {
+
+    width:850px;
+    height:850px;
+
+    position:relative;
+
+    border-radius:50%;
+
+
+    background:
+
+    radial-gradient(
+        circle,
+        #d4af37 0%,
+        #071d3a 18%,
+        #061326 70%
+    );
+
+
+    box-shadow:
+
+    0 0 100px rgba(212,175,55,.5);
+
+
+}
+
+
+
+
+
+.rayon {
+
+
+    position:absolute;
+
+
+    width:300px;
+
+    height:300px;
+
+
+    left:50%;
+
+    top:50%;
+
+
+    transform-origin:center;
+
+
+    margin-left:-150px;
+
+    margin-top:-150px;
+
+
+    padding:35px;
+
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+
+    text-align:center;
+
+
+    color:white;
+
+
+    background:
+
+    linear-gradient(
+    135deg,
+    rgba(212,175,55,.35),
+    rgba(5,20,40,.9)
+    );
+
+
+    border:2px solid #d4af37;
+
+
+    clip-path:polygon(
+    50% 50%,
+    0 0,
+    100% 0
+    );
+
+
+    transition:.5s;
+
+
+}
+
+
+
+
+.rayon:hover {
+
+
+    filter:
+
+    brightness(1.4);
+
+
+}
+
+
+
+
+
+
+/* ROTATION DES 8 PETALES */
+
+
+.rayon1 {
+
+transform:
+translate(-50%,-50%)
+rotate(0deg);
+
+}
+
+
+.rayon2 {
+
+transform:
+translate(-50%,-50%)
+rotate(45deg);
+
+}
+
+
+.rayon3 {
+
+transform:
+translate(-50%,-50%)
+rotate(90deg);
+
+}
+
+
+.rayon4 {
+
+transform:
+translate(-50%,-50%)
+rotate(135deg);
+
+}
+
+
+.rayon5 {
+
+transform:
+translate(-50%,-50%)
+rotate(180deg);
+
+}
+
+
+.rayon6 {
+
+transform:
+translate(-50%,-50%)
+rotate(225deg);
+
+}
+
+
+.rayon7 {
+
+transform:
+translate(-50%,-50%)
+rotate(270deg);
+
+}
+
+
+.rayon8 {
+
+transform:
+translate(-50%,-50%)
+rotate(315deg);
+
+}
+
+
+
+
+/* remettre le texte droit */
+
+
+.rayon h3,
+.rayon p,
+.rayon span {
+
+
+transform:
+
+rotate(0deg);
+
+}
+
+/* =====================================================
+   FENETRE MUSEE
+===================================================== */
+
+.fenetre-histoire {
+  position: fixed;
+
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.85);
+
+  backdrop-filter: blur(10px);
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  opacity: 0;
+
+  visibility: hidden;
+
+  transition: 0.5s;
+
+  z-index: 100;
+}
+
+.fenetre-histoire.active {
+  opacity: 1;
+
+  visibility: visible;
+}
+
+.carte-histoire {
+  background: #fff8e7;
+
+  width: 700px;
+
+  max-width: 90%;
+
+  padding: 50px;
+
+  text-align: center;
+
+  border: 4px solid #d4af37;
+
+  box-shadow: 0 0 70px rgba(212, 175, 55, 0.5);
+}
+
+.fermer {
+  float: right;
+
+  border: none;
+
+  background: #07182f;
+
+  color: white;
+
+  width: 40px;
+
+  height: 40px;
+
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.carte-histoire img {
+  width: 250px;
+
+  height: 250px;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+
+  border: 4px solid #d4af37;
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 900px) {
+  .rosace {
+    width: 600px;
+
+    height: 600px;
+  }
+
+  .rayon {
+    width: 160px;
+
+    padding: 15px;
+
+    font-size: 0.75rem;
+  }
+
+  .centre-christ {
+    width: 150px;
+
+    height: 150px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-contenu h1 {
+    font-size: 2.5rem;
+  }
+
+  .rosace {
+    width: 350px;
+
+    height: 350px;
+  }
+
+  .rayon {
+    width: 120px;
+
+    font-size: 0.65rem;
+  }
+
+  .rayon7,
+  .rayon8 {
+    display: none;
+  }
+
+  .centre-christ {
+    width: 110px;
+
+    height: 110px;
+  }
+}

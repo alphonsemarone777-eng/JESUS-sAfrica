@@ -1,0 +1,452 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.footer{
+    position: relative;
+    top: 130%;
+    background:#0b1320;
+    color:white;
+    padding:70px 8% 20px;
+    border-top:2px solid #d4af37;
+}
+
+.footer-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:40px;
+}
+
+.footer h2{
+    color:#d4af37;
+    font-size:28px;
+    margin-bottom:20px;
+}
+
+.footer h3{
+    color:#d4af37;
+    margin-bottom:20px;
+}
+
+.footer p{
+    color:#ddd;
+    line-height:1.7;
+}
+
+.footer-links{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.footer a{
+    color:#ddd;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.footer a:hover{
+    color:#d4af37;
+    transform:translateX(5px);
+
+}
+
+.footer-social{
+    display:flex;
+    gap:15px;
+    margin-top:15px;
+}
+
+.footer-bottom{
+    margin-top:50px;
+    padding-top:20px;
+    border-top:1px solid rgba(255,255,255,0.2);
+    text-align:center;
+    font-size:14px;
+}
+/* ========================================
+   CORRECTION DISPLAY PAGES - PRIORITÉ ABSOLUE
+   ======================================== */
+
+.page {
+  display: none !important;
+}
+
+.page.active {
+  display: block !important;
+}
+
+.page.active.cover-page,
+.page.active.chapter-page {
+  display: flex !important;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  padding: 20px 16px 90px;
+  background: linear-gradient(135deg, #f7edd2, #fffdf7, #e8c96e);
+  font-family: "Georgia", "Times New Roman", serif;
+  color: #2f2412;
+  overflow-x: hidden;
+}
+
+.book {
+  position: relative;
+  width: min(96%, 1200px);
+  height: min(86vh, 900px);
+  margin: 0 auto;
+  perspective: 1800px;
+}
+
+.pages {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease;
+  background-image: url(imgAfric/ethiopianJESUS.webp);
+}
+
+.book.opened .pages {
+  transform: rotateY(-8deg);
+}
+
+.page {
+  position: absolute;
+  inset: 0;
+  padding: clamp(24px, 4vw, 54px);
+  background: linear-gradient(135deg, #fffdf7, #f8eed6);
+  border: 1px solid rgba(180, 140, 50, 0.25);
+  border-radius: 16px;
+  overflow-y: auto;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.2);
+  transform-origin: left center;
+ 
+}
+
+.page-content {
+  max-width: 820px;
+  margin: 0 auto;
+  text-align: left;
+  line-height: 1.75;
+}
+
+.page h1 {
+  font-size: clamp(1.8rem, 3vw, 3rem);
+  color: #8b6508;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.page h2 {
+  font-size: clamp(1.4rem, 2.3vw, 2.1rem);
+  color: #9b7210;
+  margin-bottom: 16px;
+}
+
+.page p {
+  font-size: 1.04rem;
+  color: #372e1c;
+  margin-bottom: 16px;
+}
+
+.page ul {
+  margin: 18px 0 18px 20px;
+  padding: 0;
+}
+
+.page li {
+  margin-bottom: 10px;
+  padding: 10px 12px;
+  background: rgba(212, 175, 55, 0.14);
+  border-radius: 10px;
+  list-style: none;
+}
+
+blockquote {
+  margin: 24px 0;
+  padding: 18px 20px;
+  border-left: 4px solid #c9a227;
+  background: rgba(212, 175, 55, 0.12);
+  font-style: italic;
+  color: #5c4510;
+}
+
+.portrait {
+  display: block;
+  width: min(240px, 70vw);
+  height: auto;
+  margin: 18px 0 24px;
+  border-radius: 18px;
+  border: 4px solid #d4af37;
+  object-fit: cover;
+}
+
+.info-box,
+.fact-box {
+  margin: 24px 0;
+  padding: 18px 20px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #fff5c5, #efdb92);
+  border: 1px solid #d4af37;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.cover-page {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  background: linear-gradient(135deg, #5b3a12, #b8860b, #3d2608);
+  border: 10px solid #b8860b;
+  background-image: url(imgAfric/);
+background-size: cover;
+}
+
+.cover-page .cover-content {
+  max-width: 700px;
+  text-align: center;
+}
+
+.cover-page h1 {
+  font-family: "Cinzel", Georgia, serif;
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  color: #ffe8a3;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
+}
+
+.cover-page .cover-cross {
+  width: 110px;
+  height: 110px;
+  margin: 24px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ffd700, #8b6508);
+  font-size: 3.6rem;
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.65);
+}
+
+.chapter-page {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(135deg, #fff8dc, #e7c86a);
+  background: url(imgAfric/Marieafricaine.jpg) ;
+  background-size: cover;
+
+}
+.chapter-page p{
+color: white;
+}
+.chapter-header {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.chapter-header span {
+  display: block;
+  font-size: 1.1rem;
+  letter-spacing: 3px;
+  color: #8b6508;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.page-number {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  z-index: 200;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #d4af37;
+  color: #8b6508;
+  font-weight: 700;
+}
+
+.book-controls {
+  position: fixed;
+  left: 50%;
+  bottom: 18px;
+  z-index: 200;
+  display: flex;
+  gap: 12px;
+  transform: translateX(-50%);
+}
+
+.book-controls button {
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #d4af37, #8b6508);
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+}
+
+.book-controls button:hover {
+  transform: translateY(-2px) scale(1.04);
+}
+
+.book.opened .cover-page {
+  transform: rotateY(-160deg);
+}
+
+.page::-webkit-scrollbar {
+  width: 8px;
+}
+
+.page::-webkit-scrollbar-thumb {
+  background: #c9a227;
+  border-radius: 999px;
+}
+
+.page::-webkit-scrollbar-track {
+  background: #f6e8bc;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 14px 10px 80px;
+  }
+
+  .book {
+    height: min(84vh, 760px);
+  }
+
+  .page {
+    padding: 20px 18px;
+  }
+
+  .page h1 {
+    font-size: 1.7rem;
+  }
+
+  .page h2 {
+    font-size: 1.35rem;
+  }
+
+  .page p,
+  .page li {
+    font-size: 0.97rem;
+  }
+
+  .page-number {
+    top: 10px;
+    right: 10px;
+    padding: 7px 12px;
+    font-size: 0.9rem;
+  }
+
+  .book-controls {
+    bottom: 12px;
+  }
+
+  .book-controls button {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+/* ===============================
+        SUPPRESSION BOUTONS
+================================ */
+
+.book-controls {
+  opacity: 0;
+
+  pointer-events: none;
+
+  transition: 0.4s;
+}
+
+.book:hover .book-controls {
+  opacity: 1;
+
+  pointer-events: auto;
+}
+
+/* ===============================
+        MOBILE TACTILE
+================================ */
+
+@media (max-width: 768px) {
+  .page {
+    touch-action: pan-y;
+  }
+
+  .zone-suivante,
+  .zone-precedente {
+    width: 35%;
+  }
+
+  .book-controls {
+    bottom: 15px;
+  }
+}
+
+/* ===============================
+        ANIMATION APRÈS TOUR
+================================ */
+
+.page.active {
+  animation: pageArrive 0.7s ease;
+}
+
+@keyframes pageArrive {
+  from {
+    opacity: 0.5;
+
+    transform: translateX(30px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateX(0);
+  }
+}
+
+/* ===============================
+        MODE LECTURE
+================================ */
+
+.book.reading {
+  max-width: 1400px;
+}
+
+.book.reading .page-content {
+  max-width: 900px;
+}
+
+/* ===============================
+        PETITE LUEUR SUR LES BORDS
+================================ */
+
+.page:hover {
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.25),inset 0 0 45px rgba(212, 175, 55, 0.15);
+}
+.summary-page{
+    background-image: url(imgAfric/bigtanzaniabaobab.jpg);
+    background-size: cover;
+}
+.summary-page li {
+    color: #ffffff;
+}
+.preface-page {
+    background-image: url(imgAfric/biggestchurch.png);
+    background-size: cover;
+  
+}
+.preface-page p{color: white;}

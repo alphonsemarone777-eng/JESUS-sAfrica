@@ -1,0 +1,493 @@
+/* ==========================================================
+      L'AFRIQUE DE JÉSUS
+      PAGE : PERSÉCUTIONS DE L'ÉGLISE AFRICAINE
+      CSS PREMIUM
+========================================================== */
+
+/* ===============================
+        RESET
+================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body.persecution-page {
+  font-family: "Segoe UI", Georgia, serif;
+
+  background: #f8f5ed;
+
+  color: #222;
+
+  line-height: 1.8;
+}
+
+/* ===============================
+        GLOBAL
+================================ */
+
+.container {
+  width: min(1200px, 90%);
+
+  margin: auto;
+}
+
+section {
+  padding: 90px 0;
+}
+
+.section-heading {
+  text-align: center;
+
+  margin-bottom: 60px;
+}
+
+.section-heading span {
+  color: #b8860b;
+
+  font-weight: bold;
+
+  text-transform: uppercase;
+
+  letter-spacing: 3px;
+
+  font-size: 0.9rem;
+}
+
+.section-heading h2 {
+  font-size: 2.5rem;
+
+  color: #123b5d;
+
+  margin-top: 15px;
+}
+
+/* ===============================
+        HERO
+================================ */
+
+.persecution-hero {
+  height: 90vh;
+
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.75)),
+    url("images/persecution-bg.jpg");
+
+  background-size: cover;
+
+  background-position: center;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  color: white;
+
+  position: relative;
+}
+
+.hero-content {
+  max-width: 900px;
+
+  padding: 30px;
+
+  z-index: 2;
+}
+
+.hero-label {
+  color: #e0b84c;
+
+  font-weight: bold;
+
+  letter-spacing: 4px;
+
+  text-transform: uppercase;
+}
+
+.hero-content h1 {
+  font-size: clamp(2.3rem, 5vw, 4rem);
+
+  line-height: 1.2;
+
+  margin: 25px 0;
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+
+  max-width: 750px;
+
+  margin: auto;
+}
+
+.hero-btn {
+  display: inline-block;
+
+  margin-top: 35px;
+
+  padding: 15px 35px;
+
+  background: #c9a227;
+
+  color: white;
+
+  text-decoration: none;
+
+  border-radius: 50px;
+
+  transition: 0.3s;
+}
+
+.hero-btn:hover {
+  background: #9c7615;
+
+  transform: translateY(-5px);
+}
+
+/* ===============================
+        INTRODUCTION
+================================ */
+
+.intro-content {
+  display: grid;
+
+  grid-template-columns: 2fr 1fr;
+
+  gap: 50px;
+
+  align-items: center;
+}
+
+.text-block p {
+  margin-bottom: 25px;
+
+  font-size: 1.1rem;
+}
+
+.info-card {
+  background: white;
+
+  padding: 35px;
+
+  border-radius: 20px;
+
+  border-top: 5px solid #c9a227;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.info-card h3 {
+  color: #123b5d;
+
+  margin-bottom: 20px;
+}
+
+/* ===============================
+        HISTOIRE
+================================ */
+
+.history-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 40px;
+}
+
+.history-card {
+  background: white;
+
+  border-radius: 25px;
+
+  overflow: hidden;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.history-card img {
+  width: 100%;
+
+  height: 280px;
+
+  object-fit: cover;
+}
+
+.history-card h3 {
+  padding: 25px;
+
+  color: #123b5d;
+}
+
+.history-card p {
+  padding: 0 25px 30px;
+}
+
+/* ===============================
+        TRANSITION AFRIQUE
+================================ */
+
+.africa-transition {
+  background: linear-gradient(135deg, #123b5d, #0c5878);
+
+  color: white;
+
+  text-align: center;
+}
+
+.africa-transition h2 {
+  color: #e8c75d;
+
+  font-size: 2.5rem;
+
+  margin-bottom: 30px;
+}
+
+.africa-transition p {
+  max-width: 900px;
+
+  margin: 20px auto;
+
+  font-size: 1.15rem;
+}
+
+/* ===============================
+        PAYS
+================================ */
+
+.country-section {
+  background: #fff;
+}
+
+.country-section:nth-child(even) {
+  background: #f5f0e3;
+}
+
+.country-header {
+  text-align: center;
+
+  margin-bottom: 50px;
+}
+
+.country-header span {
+  color: #b8860b;
+
+  text-transform: uppercase;
+
+  letter-spacing: 3px;
+}
+
+.country-header h2 {
+  font-size: 2.4rem;
+
+  color: #123b5d;
+
+  margin-top: 15px;
+}
+
+.country-content {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 60px;
+
+  align-items: center;
+}
+
+.country-image img {
+  width: 100%;
+
+  height: 400px;
+
+  object-fit: cover;
+
+  border-radius: 25px;
+
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+.country-text p {
+  margin-bottom: 25px;
+}
+
+/* ===============================
+        FACT BOX
+================================ */
+
+.fact-box {
+  background: #fff7db;
+
+  border-left: 6px solid #c9a227;
+
+  padding: 30px;
+
+  border-radius: 15px;
+
+  margin-top: 30px;
+}
+
+.fact-box h3 {
+  color: #8a6500;
+
+  margin-bottom: 15px;
+}
+
+/* ===============================
+        TEMOIGNAGE
+================================ */
+
+.testimony-section {
+  background: #123b5d;
+}
+
+.quote-card {
+  max-width: 850px;
+
+  margin: auto;
+
+  text-align: center;
+
+  color: white;
+
+  font-size: 1.5rem;
+
+  font-style: italic;
+}
+
+.quote-card span {
+  display: block;
+
+  margin-top: 25px;
+
+  color: #e8c75d;
+
+  font-size: 1rem;
+}
+
+/* ===============================
+        CARTE ACTUALITE
+================================ */
+
+.topics-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 30px;
+
+  margin-top: 50px;
+}
+
+.topic-card {
+  background: white;
+
+  padding: 30px;
+
+  border-radius: 20px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+  transition: 0.3s;
+}
+
+.topic-card:hover {
+  transform: translateY(-10px);
+}
+
+.topic-card h3 {
+  color: #123b5d;
+}
+
+/* ===============================
+        TIMELINE
+================================ */
+
+.timeline {
+  max-width: 800px;
+
+  margin: auto;
+
+  border-left: 4px solid #c9a227;
+
+  padding-left: 40px;
+}
+
+.timeline-item {
+  margin-bottom: 40px;
+
+  position: relative;
+}
+
+.timeline-item span {
+  background: #123b5d;
+
+  color: white;
+
+  padding: 10px 20px;
+
+  border-radius: 30px;
+
+  display: inline-block;
+
+  margin-bottom: 15px;
+}
+
+/* ===============================
+        CONCLUSION
+================================ */
+
+.final-message {
+  background: linear-gradient(135deg, #fff3c4, #ffffff);
+
+  text-align: center;
+}
+
+.final-message h2 {
+  font-size: 2.5rem;
+
+  color: #8a6500;
+
+  margin-bottom: 30px;
+}
+
+.final-message p {
+  max-width: 850px;
+
+  margin: 20px auto;
+
+  font-size: 1.15rem;
+}
+
+/* ===============================
+        RESPONSIVE
+================================ */
+
+@media (max-width: 900px) {
+  .intro-content,
+  .country-content,
+  .history-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .topics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .country-image img {
+    height: 300px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.3rem;
+  }
+
+  section {
+    padding: 60px 0;
+  }
+}

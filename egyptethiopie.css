@@ -1,0 +1,944 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* img:url(imgAfric/BoisAfrique)
+img:url(imgAfric/ */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100%;
+}
+/* ==========================
+        HEADER
+========================== */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(25, 18, 8, 0.35);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 215, 120, 0.15);
+}
+
+/* ==========================
+        NAVBAR
+========================== */
+
+.navbar {
+  max-width: 1300px;
+  height: 75px;
+  margin: auto;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ==========================
+          LOGO
+========================== */
+
+.logo a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+}
+
+.logo img {
+  width: 55px;
+  transition: 0.35s;
+}
+
+.logo img:hover {
+  transform: scale(1.08);
+}
+
+.logo span {
+  color: #f3d38a;
+  font-size: 1.45rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* ==========================
+          MENU
+========================== */
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+}
+
+.menu a,
+summary {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  list-style: none;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.menu a:hover,
+summary:hover {
+  color: #d6a85f;
+}
+
+/* enlève le triangle */
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+/* ==========================
+       MENU DÉROULANT
+========================== */
+
+details {
+  position: relative;
+}
+
+details ul {
+  position: absolute;
+  top: 45px;
+  left: -200px;
+  width: 260px;
+  background: #1d150d;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.35);
+}
+
+details li {
+  list-style: none;
+}
+
+details li a {
+  display: block;
+  padding: 15px 20px;
+}
+
+details li a:hover {
+  background: #3b2b18;
+}
+/*==========================================================
+                HERO
+==========================================================*/
+
+.hero-antique {
+  position: relative;
+
+  min-height: 95vh;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  padding: 160px 8% 110px;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.82)),
+    url(imgAfric/hero-afrique-antique.webp);
+
+  background-size: cover;
+
+  background-position: center;
+}
+
+.hero-antique-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background: radial-gradient(
+    circle at top,
+    rgba(200, 170, 60, 0.2),
+    transparent 60%
+  );
+}
+
+.hero-antique-content {
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 950px;
+
+  text-align: center;
+}
+
+.hero-antique-chapitre {
+  color: #c59a2c;
+
+  font-weight: bold;
+
+  letter-spacing: 3px;
+
+  text-transform: uppercase;
+
+  margin-bottom: 20px;
+}
+
+.hero-antique h1 {
+  font-size: clamp(2.8rem, 6vw, 5rem);
+
+  color: #124a87;
+
+  line-height: 1.1;
+
+  margin-bottom: 30px;
+}
+
+.hero-antique-separateur {
+  width: 130px;
+
+  height: 4px;
+
+  margin: auto;
+
+  margin-bottom: 35px;
+
+  background: linear-gradient(to right, #c59a2c, #f4d77a, #c59a2c);
+
+  border-radius: 20px;
+}
+
+.hero-antique-intro {
+  max-width: 800px;
+
+  margin: auto;
+
+  font-size: 1.15rem;
+
+  line-height: 2;
+
+  color: #555;
+
+  margin-bottom: 45px;
+}
+
+.btn-antique {
+  display: inline-block;
+
+  padding: 18px 40px;
+
+  border-radius: 50px;
+
+  background: #124a87;
+
+  color: white;
+
+  text-decoration: none;
+
+  font-weight: bold;
+
+  transition: 0.35s;
+}
+
+.btn-antique:hover {
+  transform: translateY(-6px);
+
+  background: #0b3561;
+
+  box-shadow: 0 18px 35px rgba(18, 74, 135, 0.25);
+}
+
+/*==========================================================
+            EXPLORER
+==========================================================*/
+
+.explorer-antique {
+  padding: 110px 8%;
+
+  background: #f8fbff;
+}
+
+.titre-explorer {
+  text-align: center;
+
+  margin-bottom: 40px;
+}
+
+.titre-explorer p {
+  color: #c59a2c;
+
+  letter-spacing: 3px;
+
+  font-weight: bold;
+}
+
+.titre-explorer h2 {
+  color: #124a87;
+
+  font-size: 2.6rem;
+
+  margin: 15px 0;
+}
+
+.titre-explorer span {
+  display: block;
+
+  width: 100px;
+
+  height: 4px;
+
+  margin: auto;
+
+  background: #c59a2c;
+
+  border-radius: 50px;
+}
+
+.texte-explorer {
+  max-width: 900px;
+
+  margin: 0 auto 70px;
+
+  text-align: center;
+
+  line-height: 2;
+
+  color: #555;
+
+  font-size: 1.08rem;
+}
+
+.etapes-exploration {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+  gap: 30px;
+}
+
+.etape {
+  background: white;
+
+  border-radius: 22px;
+
+  padding: 35px 25px;
+
+  text-align: center;
+
+  transition: 0.35s;
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.07);
+
+  border: 1px solid rgba(18, 74, 135, 0.08);
+}
+
+.etape:hover {
+  transform: translateY(-10px);
+
+  box-shadow: 0 20px 40px rgba(18, 74, 135, 0.15);
+}
+
+.icone-etape {
+  font-size: 2.8rem;
+
+  margin-bottom: 18px;
+}
+
+.etape h3 {
+  color: #124a87;
+
+  margin-bottom: 15px;
+}
+
+.etape p {
+  color: #666;
+
+  line-height: 1.8;
+}
+
+/*==========================================================
+                RESPONSIVE
+==========================================================*/
+
+@media (max-width: 900px) {
+  .hero-antique {
+    padding: 140px 7% 80px;
+
+    min-height: auto;
+  }
+
+  .hero-antique h1 {
+    font-size: 2.6rem;
+  }
+
+  .hero-antique-intro {
+    font-size: 1rem;
+
+    line-height: 1.8;
+  }
+
+  .titre-explorer h2 {
+    font-size: 2rem;
+  }
+}
+.cliquez{
+    background: url(imgAfric/parcheminold.webp);
+    text-align: center;
+    font-size: 25px;
+  
+}
+.hero-top{
+    flex:4;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:130px 20px 40px;
+    background-image:linear-gradient(rgba(30,20,10,.25),rgba(30,20,10,.35)), url(imgAfric/ethiopianJESUS.webp);
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center center;
+
+}
+
+/* voile */
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:radial-gradient(circle,
+    rgba(255,220,120,.08),
+    transparent 60%);
+}
+
+/*==========================
+        CONTENU
+==========================*/
+
+.hero-content{
+    position:relative;
+   transform:translateY(-70px);
+    z-index:2;
+    max-width:850px;
+    padding:20px;
+    animation:fadeUp 1.2s ease;
+position: relative;
+}
+
+
+.hero h1{
+
+    font-size:clamp(3rem,7vw,5.8rem);
+     position: relative;
+    z-index: 5;
+    color:#ffffff;
+    margin-bottom:20px;
+     color:white;
+    text-shadow: 0 5px 18px rgba(0,0,0,.6);
+    letter-spacing:3px;
+    top: 17%;
+    position: absolute;
+   
+}
+
+.subtitle{
+    margin-top: 70%;
+    color:#ffe8a3;
+    font-size:1.5rem;
+    font-weight:600;
+    text-shadow:0 2px 8px rgba(0,0,0,.45);
+    margin-bottom:20px;
+}
+.description{
+    color:#eeeeee;
+    max-width:760px;
+    line-height:1.8;
+    margin-bottom:40px;
+}
+
+/*==========================
+        BOUTONS
+==========================*/
+
+.hero-buttons{
+   margin-top: 10%;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+
+.btn{
+    text-decoration:none;
+    padding:15px 38px;
+    border-radius:40px;
+    transition:.35s;
+    font-weight:bold;
+}
+
+.btn-primary{
+    background:#c89b3c;
+    color:white;
+}
+
+.btn-primary:hover{
+    transform:translateY(-5px);
+    background:#d7aa48;
+}
+
+.btn-secondary{
+    border:2px solid white;
+    color:white;
+}
+
+.btn-secondary:hover{
+    background:white;
+    color:#222;
+}
+
+.scroll-down{
+    position:absolute;
+    bottom:35px;
+    left:50%;
+    transform:translateX(-50%);
+    color:white;
+    font-size:2rem;
+    text-decoration:none;
+    animation:bounce 2s infinite;
+}
+.carte-afrique svg{
+    height:auto;
+    width: 80%;
+    background: linear-gradient(rgb(6, 129, 129 ,.28)),url(imgAfric/martyrsouganda.jpg);
+   background-repeat: repeat;
+   background-position: bottom right ;
+   background-size: contain;
+}
+
+@keyframes floating{
+    0%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-10px);
+    }
+    100%{
+        transform:translateY(0);
+    }
+}
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes bounce{
+    0%,100%{
+        transform:translate(-50%,0);
+    }
+    50%{
+        transform:translate(-50%,12px);
+    }
+}
+
+@keyframes zoomHero{
+    from{
+        background-size:100%;
+    }
+    to{
+        background-size:108%;
+    }
+}
+
+/*
+      RESPONSIVE
+*/
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:3rem;
+
+}
+
+.subtitle{
+    font-size:1.2rem;
+
+}
+
+.description{
+    font-size:1rem;
+}
+
+.hero{
+    padding:0 20px;
+}
+
+}
+
+.carte-afrique path{
+     fill:#68462b !important; 
+ 
+
+    stroke:white;
+    stroke-width:1;
+    cursor:pointer;
+     transition:fill 0.3s ease, filter 0.3s ease;
+}
+.carte-afrique path.survol{
+    filter:brightness(1.3);
+    transform:scale(1.02);
+}
+.carte-afrique path:hover{
+    fill:#d4af37 !important;
+    stroke:#fff8dc;
+    stroke-width:2;
+    filter:
+      drop-shadow(0 0 5px #d4af37)
+      drop-shadow(0 0 15px #d4af37);
+}
+.carte-afrique{
+    position:relative;
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+.zone-svg{
+    flex: 3;
+}
+.zone-svg svg{
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+.info-pays{
+
+    position:absolute;
+
+    top:50%;
+
+    right:40px;
+
+    transform:translateY(-50%) scale(.92);
+
+    width:390px;
+
+    max-height:82vh;
+
+    overflow-y:auto;
+    background: rgba(255,255,255,.96);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border:2px solid rgba(212,175,55,.55);
+
+    border-radius:24px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.25);
+    padding:28px;
+    opacity:0;
+    visibility:hidden;
+
+    transition:opacity .35s ease,transform .35s ease;
+  color: #222;
+    z-index:500;
+
+}
+
+.info-pays.active{
+    opacity:1;
+    transform:translateY(0);
+
+}
+.footer{
+    background:#0b1320;
+    color:white;
+    padding:70px 8% 20px;
+    border-top:2px solid #d4af37;
+}
+
+.footer-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:40px;
+}
+
+.footer h2{
+    color:#d4af37;
+    font-size:28px;
+    margin-bottom:20px;
+}
+
+.footer h3{
+    color:#d4af37;
+    margin-bottom:20px;
+}
+
+.footer p{
+    color:#ddd;
+    line-height:1.7;
+}
+
+.footer-links{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.footer a{
+    color:#ddd;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.footer a:hover{
+    color:#d4af37;
+    transform:translateX(5px);
+
+}
+
+.footer-social{
+    display:flex;
+    gap:15px;
+    margin-top:15px;
+}
+
+.footer-bottom{
+    margin-top:50px;
+    padding-top:20px;
+    border-top:1px solid rgba(255,255,255,0.2);
+    text-align:center;
+    font-size:14px;
+}
+.btn-explorer{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 22px;
+    background:#d4af37;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn-explorer:hover{
+    background:#b89222;
+}
+
+.bloc-info{
+    margin-top:18px;
+}
+
+.bloc-info h4{
+    margin-bottom:6px;
+    color:#d4af37;
+}
+.info-pays.open{
+
+    opacity:1;
+
+    visibility:visible;
+
+    transform:translateY(-50%) scale(1);
+
+}
+.info-header{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    margin-bottom:25px;
+
+    padding-bottom:18px;
+
+    border-bottom:1px solid rgba(212,175,55,.35);
+
+}
+.info-drapeau{
+
+    font-size:55px;
+
+    animation:drapeau 3s ease infinite;
+
+}
+@keyframes drapeau{
+
+    0%{
+
+        transform:rotate(-2deg);
+
+    }
+
+    50%{
+
+        transform:rotate(2deg);
+    }
+
+    100%{
+        transform:rotate(-2deg);
+    }
+
+}
+.info-nom{
+
+    color:#8b6b18;
+
+    font-size:2rem;
+
+    margin:0;
+
+}
+.info-sous-titre{
+
+    color:#777;
+
+    font-size:.9rem;
+
+    margin-top:4px;
+
+    letter-spacing:1px;
+
+}
+.bloc-info{
+
+    margin-bottom:24px;
+
+}
+.bloc-info h3{
+
+    color:#b88a10;
+
+    margin-bottom:10px;
+
+    font-size:1.05rem;
+
+}
+.bloc-info p{
+
+    line-height:1.7;
+
+    color:#333;
+
+}
+.btn-explorer{
+
+    display:inline-block;
+
+    margin-top:12px;
+
+    padding:14px 22px;
+
+    border-radius:12px;
+
+    background:#d4af37;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+.btn-explorer:hover{
+
+    background:#b88a10;
+
+    transform:translateY(-3px);
+
+}
+.fermer-info{
+
+    position:absolute;
+
+    top:18px;
+
+    right:18px;
+
+    width:42px;
+
+    height:42px;
+
+    border:none;
+
+    border-radius:50%;
+
+    cursor:pointer;
+
+    background:#f1f1f1;
+
+    transition:.3s;
+
+    font-size:1rem;
+
+}
+.fermer-info:hover{
+
+    background:#d4af37;
+
+    color:white;
+
+    transform:rotate(90deg);
+
+}
+.info-pays::-webkit-scrollbar{
+
+    width:8px;
+
+}
+.info-pays::-webkit-scrollbar-track{
+
+    background:transparent;
+
+}
+.info-pays::-webkit-scrollbar-thumb{
+
+    background:#d4af37;
+
+    border-radius:20px;
+
+}
+@media(max-width:900px){
+
+.info-pays{
+
+    left:20px;
+
+    right:20px;
+
+    width:auto;
+
+    top:50%;
+
+    transform:translateY(-50%) scale(.95);
+
+    max-height:80vh;
+
+}
+
+.info-pays.open{
+
+    transform:translateY(-50%) scale(1);
+
+}
+
+}

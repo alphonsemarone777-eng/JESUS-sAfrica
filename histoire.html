@@ -1,0 +1,751 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Histoire du christianisme en Afrique | Jesus's Africa</title>
+
+    <link rel="stylesheet" href="histoire.css" />
+  </head>
+
+  <body>
+    <!-- =====================================================
+     HEADER - ENTREE DU MUSEE
+===================================================== -->
+
+    <header class="header-musee">
+      <div class="header-overlay"></div>
+
+      <div class="header-contenu">
+        <span class="header-label"> ✠ MUSÉE NUMÉRIQUE </span>
+
+        <h1>
+          Histoire du
+          <span> Christianisme en Afrique </span>
+        </h1>
+
+        <p>
+          Deux mille ans d'histoire. Des premiers témoins africains aux grandes
+          Églises du XXIᵉ siècle.
+        </p>
+
+        <div class="header-decoration">✦ ✠ ✦</div>
+      </div>
+    </header>
+
+    <!-- =====================================================
+     INTRODUCTION
+===================================================== -->
+
+    <section class="introduction-musee">
+      <div class="intro-contenu">
+        <span> BIENVENUE DANS LE MUSÉE </span>
+
+        <h2>L'Afrique au cœur de l'histoire de l'Église</h2>
+
+        <p>
+          L'histoire chrétienne de l'Afrique traverse deux mille ans de foi, de
+          témoignage, de persécution, de renaissance et d'espérance. Découvrez
+          les grandes étapes qui ont façonné le christianisme africain, depuis
+          les premiers siècles jusqu'à l'Église africaine d'aujourd'hui.
+        </p>
+      </div>
+    </section>
+
+    <!-- =====================================================
+     ROSACE HISTORIQUE
+===================================================== -->
+
+    <section class="musee-histoire" id="musee-histoire">
+      <div class="titre-rosace">
+        <span> ✠ </span>
+
+        <h2>La grande rosace historique</h2>
+
+        <p>Cliquez sur une période pour entrer dans une salle du musée.</p>
+      </div>
+
+      <div class="rosace-container">
+        <div class="rosace">
+          <!-- ================= CENTRE ================= -->
+
+          <div
+            class="centre-christ"
+            onclick="
+              ouvrirHistoire(
+                'Le Christ et la mission en Afrique',
+                'images/christ-afrique.jpg',
+                'Le Christ est au centre de toute l’histoire chrétienne africaine. Depuis les premiers témoins jusqu’aux Églises actuelles, l’Afrique a participé à la diffusion de l’Évangile.',
+              )
+            "
+          >
+            <div class="croix">✠</div>
+
+            <h3>Le Christ</h3>
+
+            <p>Source de toute mission</p>
+          </div>
+
+          <!-- ================= RAYON I ================= -->
+
+          <div
+            class="rayon rayon1"
+            onclick="
+              ouvrirHistoire(
+                'L’Afrique dans la Bible',
+                'images/afrique-bible.jpg',
+                'Les premiers liens entre l’Afrique et l’histoire biblique.',
+              )
+            "
+          >
+            <span> I </span>
+
+            <h3>Afrique biblique</h3>
+
+            <p>
+              Égypte
+              <br />
+              Simon de Cyrène
+              <br />
+              Éthiopie
+            </p>
+          </div>
+
+          <!-- ================= RAYON II ================= -->
+
+          <div
+            class="rayon rayon2"
+            onclick="
+              ouvrirHistoire(
+                'Les premiers siècles du christianisme africain',
+                'images/alexandrie.jpg',
+                'Alexandrie, Carthage, les martyrs et les Pères africains.',
+              )
+            "
+          >
+            <span> II </span>
+
+            <h3>Premiers siècles</h3>
+
+            <p>
+              Alexandrie
+              <br />
+              Carthage
+              <br />
+              Augustin
+            </p>
+          </div>
+
+          <!-- ================= RAYON III ================= -->
+
+          <div
+            class="rayon rayon3"
+            onclick="
+              ouvrirHistoire(
+                'Les royaumes chrétiens africains',
+                'images/aksoum.jpg',
+                'Aksoum, Nubie et les anciennes civilisations chrétiennes africaines.',
+              )
+            "
+          >
+            <span> III </span>
+
+            <h3>Royaumes chrétiens</h3>
+
+            <p>
+              Aksoum
+              <br />
+              Nubie
+              <br />
+              Éthiopie
+            </p>
+          </div>
+
+          <!-- ================= RAYON IV ================= -->
+
+          <div
+            class="rayon rayon4"
+            onclick="
+              ouvrirHistoire(
+                'L’Afrique chrétienne face aux transformations',
+                'images/afrique-nord.jpg',
+                'L’évolution du christianisme africain après les grands changements historiques.',
+              )
+            "
+          >
+            <span> IV </span>
+
+            <h3>Transformations</h3>
+
+            <p>
+              Afrique du Nord
+              <br />
+              Coptes
+              <br />
+              Histoire
+            </p>
+          </div>
+
+          <!-- ================= RAYON V ================= -->
+
+          <div
+            class="rayon rayon5"
+            onclick="
+              ouvrirHistoire(
+                'Traite négrière et rencontres historiques',
+                'images/goree.jpg',
+                'L’histoire de la traite négrière, de Gorée et des missions chrétiennes.',
+              )
+            "
+          >
+            <span> V </span>
+
+            <h3>Traite négrière</h3>
+
+            <p>
+              Gorée
+              <br />
+              Missions
+              <br />
+              Mémoire
+            </p>
+          </div>
+
+          <!-- ================= RAYON VI ================= -->
+
+          <div
+            class="rayon rayon6"
+            onclick="
+              ouvrirHistoire(
+                'Colonisation et évangélisation',
+                'images/mission-afrique.jpg',
+                'L’arrivée des missions, les écoles, les hôpitaux et la naissance des Églises locales.',
+              )
+            "
+          >
+            <span> VI </span>
+
+            <h3>Colonisation</h3>
+
+            <p>
+              Missions
+              <br />
+              Écoles
+              <br />
+              Évangélisation
+            </p>
+          </div>
+
+          <!-- ================= RAYON VII ================= -->
+
+          <div
+            class="rayon rayon7"
+            onclick="
+              ouvrirHistoire(
+                'Les indépendances et l’Église africaine',
+                'images/eglise-afrique.jpg',
+                'La naissance d’une Église africaine autonome après les indépendances.',
+              )
+            "
+          >
+            <span> VII </span>
+
+            <h3>Indépendances</h3>
+
+            <p>
+              Vatican II
+              <br />
+              Évêques africains
+              <br />
+              Renouveau
+            </p>
+          </div>
+
+          <!-- ================= RAYON VIII ================= -->
+
+          <div
+            class="rayon rayon8"
+            onclick="
+              ouvrirHistoire(
+                'L’Afrique chrétienne aujourd’hui',
+                'images/afrique-eglise.jpg',
+                'L’avenir de l’Église passe aussi par la jeunesse et la croissance africaine.',
+              )
+            "
+          >
+            <span> VIII </span>
+
+            <h3>Afrique aujourd’hui</h3>
+
+            <p>
+              Jeunesse
+              <br />
+              Vocations
+              <br />
+              Espérance
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+     FENETRE MUSEE
+===================================================== -->
+
+    <div class="fenetre-histoire" id="fenetreHistoire">
+      <div class="carte-histoire">
+        <button class="fermer" onclick="fermerHistoire()">✕</button>
+
+        <div class="icone-histoire">✠</div>
+
+        <h2 id="titreHistoire">Titre</h2>
+
+        <img id="imageHistoire" src="" alt="" />
+
+        <p id="texteHistoire">Texte</p>
+      </div>
+    </div>
+
+    <!-- =====================================================
+     FOOTER
+===================================================== -->
+
+    <footer class="footer">
+      <p>© Jesus's Africa - L'histoire du christianisme en Afrique</p>
+    </footer>
+
+    <script>/* =====================================================
+   MUSEE HISTORIQUE - JESUS'S AFRICA
+===================================================== */
+
+
+const sallesHistoire = {
+
+
+    christ: {
+
+        titre:
+        "Le Christ et la mission en Afrique",
+
+        image:
+        "images/christ-afrique.jpg",
+
+        texte:
+
+        `
+        <strong>Le Christ est au centre de l'histoire chrétienne africaine.</strong>
+
+        <br><br>
+
+        Dès les premiers siècles, l'Afrique entre en contact avec le message
+        chrétien. De l'Égypte à l'Éthiopie, de Cyrène à Carthage,
+        des communautés chrétiennes apparaissent et participent à la naissance
+        de l'Église universelle.
+
+        <br><br>
+
+        Cette salle présente le rôle fondamental de l'Afrique dans la diffusion
+        de l'Évangile.
+        `
+
+    },
+
+
+
+
+
+    periode1: {
+
+
+        titre:
+        "L'Afrique dans la Bible",
+
+        image:
+        "images/afrique-bible.jpg",
+
+        texte:
+
+        `
+        L'histoire biblique possède de nombreux liens avec le continent africain.
+
+        <br><br>
+
+        L'Égypte apparaît dans plusieurs grands récits bibliques.
+        La Sainte Famille y trouve refuge.
+        Simon de Cyrène aide Jésus sur le chemin de la Croix.
+        L'Éthiopien baptisé par Philippe devient l'un des premiers témoins
+        africains du christianisme.
+
+        <br><br>
+
+        Cette première rencontre prépare l'arrivée de l'Évangile en Afrique.
+        `
+
+    },
+
+
+
+
+
+
+    periode2: {
+
+
+        titre:
+        "Les premiers siècles du christianisme africain",
+
+        image:
+        "images/alexandrie.jpg",
+
+        texte:
+
+        `
+        Entre le Ier et le Ve siècle, l'Afrique devient l'un des grands centres
+        intellectuels et spirituels du christianisme.
+
+        <br><br>
+
+        Alexandrie développe une école théologique majeure.
+        Carthage devient un foyer chrétien exceptionnel.
+
+        <br><br>
+
+        L'Afrique donne à l'Église des figures immenses :
+        saint Cyprien, Tertullien, saint Augustin d'Hippone,
+        ainsi que de nombreux martyrs.
+        `
+
+    },
+
+
+
+
+
+
+    periode3: {
+
+
+        titre:
+        "Les royaumes chrétiens africains",
+
+        image:
+        "images/aksoum.jpg",
+
+        texte:
+
+        `
+        L'Afrique a connu de grands royaumes chrétiens.
+
+        <br><br>
+
+        Le royaume d'Aksoum adopte officiellement le christianisme
+        au IVe siècle.
+
+        <br><br>
+
+        En Nubie, plusieurs royaumes chrétiens développent leurs propres
+        traditions, leurs églises et leurs monastères.
+
+        <br><br>
+
+        L'Éthiopie conserve jusqu'à aujourd'hui une des traditions chrétiennes
+        les plus anciennes du monde.
+        `
+
+    },
+
+
+
+
+
+
+    periode4: {
+
+
+        titre:
+        "L'Afrique chrétienne face aux transformations",
+
+        image:
+        "images/coptes.jpg",
+
+        texte:
+
+        `
+        Après les grands changements politiques et religieux du Moyen Âge,
+        les communautés chrétiennes africaines connaissent de profondes
+        transformations.
+
+        <br><br>
+
+        L'Église copte d'Égypte continue de transmettre une tradition
+        chrétienne ancienne.
+
+        <br><br>
+
+        Cette période montre la résistance et la continuité des communautés
+        chrétiennes africaines.
+        `
+
+    },
+
+
+
+
+
+
+    periode5: {
+
+
+        titre:
+        "Traite négrière et mémoire africaine",
+
+        image:
+        "images/goree.jpg",
+
+        texte:
+
+        `
+        La traite négrière constitue une période douloureuse de l'histoire
+        africaine.
+
+        <br><br>
+
+        Des lieux comme l'île de Gorée au Sénégal témoignent aujourd'hui
+        de cette mémoire.
+
+        <br><br>
+
+        Cette salle présente les souffrances vécues par les peuples africains,
+        mais aussi les engagements historiques de nombreux chrétiens
+        pour défendre la dignité humaine.
+        `
+
+    },
+
+
+
+
+
+
+
+    periode6: {
+
+
+        titre:
+        "Missions et évangélisation",
+
+        image:
+        "images/mission-afrique.jpg",
+
+        texte:
+
+        `
+        Aux XIXe et XXe siècles, les missions chrétiennes se développent
+        dans de nombreuses régions d'Afrique.
+
+        <br><br>
+
+        Création d'écoles, d'hôpitaux, formation de catéchistes
+        et naissance progressive d'Églises locales.
+
+        <br><br>
+
+        Cette période marque profondément l'histoire moderne du continent.
+        `
+
+    },
+
+
+
+
+
+
+
+    periode7: {
+
+
+        titre:
+        "Les indépendances et l'Église africaine",
+
+        image:
+        "images/eglise-afrique.jpg",
+
+        texte:
+
+        `
+        Après les indépendances, l'Église africaine connaît une nouvelle étape.
+
+        <br><br>
+
+        Les évêques africains prennent une place croissante.
+        Vatican II encourage l'enracinement local des communautés.
+
+        <br><br>
+
+        Une Église africaine pleinement actrice de son histoire apparaît.
+        `
+
+    },
+
+
+
+
+
+
+
+    periode8: {
+
+
+        titre:
+        "L'Afrique chrétienne aujourd'hui",
+
+        image:
+        "images/afrique-eglise.jpg",
+
+        texte:
+
+        `
+        Aujourd'hui, l'Afrique représente l'un des grands foyers
+        du christianisme mondial.
+
+        <br><br>
+
+        Sa jeunesse, ses vocations, ses communautés vivantes
+        et ses nombreux témoins annoncent une nouvelle étape
+        dans l'histoire de l'Église.
+
+        <br><br>
+
+        L'avenir du christianisme possède une dimension africaine majeure.
+        `
+
+    }
+
+
+
+};
+
+
+
+
+
+
+
+
+/* =====================================================
+   OUVRIR UNE SALLE
+===================================================== */
+
+
+function ouvrirHistoire(salle){
+
+
+
+    const contenu = sallesHistoire[salle];
+
+
+
+    if(!contenu){
+
+        console.error(
+        "Salle inexistante : ",
+        salle
+        );
+
+        return;
+
+    }
+
+
+
+    document
+    .getElementById("titreHistoire")
+    .innerHTML = contenu.titre;
+
+
+
+    document
+    .getElementById("imageHistoire")
+    .src = contenu.image;
+
+
+
+    document
+    .getElementById("texteHistoire")
+    .innerHTML = contenu.texte;
+
+
+
+    document
+    .getElementById("fenetreHistoire")
+    .classList
+    .add("active");
+
+
+
+    document.body.style.overflow="hidden";
+
+
+}
+
+
+
+
+
+
+
+/* =====================================================
+   FERMER UNE SALLE
+===================================================== */
+
+
+function fermerHistoire(){
+
+
+
+    document
+    .getElementById("fenetreHistoire")
+    .classList
+    .remove("active");
+
+
+
+    document.body.style.overflow="auto";
+
+
+}
+
+
+
+
+
+
+
+
+/* =====================================================
+   FERMER AVEC ESC
+===================================================== */
+
+
+document.addEventListener(
+"keydown",
+
+function(e){
+
+
+    if(e.key==="Escape"){
+
+
+        fermerHistoire();
+
+
+    }
+
+
+});
+</script>
+  </body>
+</html>
